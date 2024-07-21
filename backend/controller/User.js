@@ -126,7 +126,7 @@ export const updateUser = async (req, res) => {
         await cloudinary.v2.uploader.destroy(user.skills.image1.public_id);
        
         const myCloud = await cloudinary.v2.uploader.upload(skills.image1, {
-          folder: "portfolio",
+          folder: "backendcode",
         });
         user.skills.image1 = {
           public_id: myCloud.public_id,
@@ -139,7 +139,7 @@ export const updateUser = async (req, res) => {
         await cloudinary.v2.uploader.destroy(user.skills.image2.public_id);
       
         const myCloud = await cloudinary.v2.uploader.upload(skills.image2, {
-          folder: "portfolio",
+          folder: "backendcode",
         });
         user.skills.image2 = {
           public_id: myCloud.public_id,
@@ -153,7 +153,7 @@ export const updateUser = async (req, res) => {
         await cloudinary.v2.uploader.destroy(user.skills.image3.public_id);
        
         const myCloud = await cloudinary.v2.uploader.upload(skills.image3, {
-          folder: "portfolio",
+          folder: "backendcode",
         });
         user.skills.image3 = {
           public_id: myCloud.public_id,
@@ -166,7 +166,7 @@ export const updateUser = async (req, res) => {
         await cloudinary.v2.uploader.destroy(user.skills.image4.public_id);
        
         const myCloud = await cloudinary.v2.uploader.upload(skills.image4, {
-          folder: "portfolio",
+          folder: "backendcode",
         });
         user.skills.image4 = {
           public_id: myCloud.public_id,
@@ -180,7 +180,7 @@ export const updateUser = async (req, res) => {
             await cloudinary.v2.uploader.destroy(user.skills.image4.public_id);
            
             const myCloud = await cloudinary.v2.uploader.upload(skills.image5, {
-              folder: "portfolio",
+              folder: "backendcode",
             });
             user.skills.image5 = {
               public_id: myCloud.public_id,
@@ -193,7 +193,7 @@ export const updateUser = async (req, res) => {
             await cloudinary.v2.uploader.destroy(user.skills.image4.public_id);
            
             const myCloud = await cloudinary.v2.uploader.upload(skills.image6, {
-              folder: "portfolio",
+              folder: "backendcode",
             });
             user.skills.image6 = {
               public_id: myCloud.public_id,
