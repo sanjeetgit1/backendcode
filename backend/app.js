@@ -1,5 +1,7 @@
 import express from "express";
 import cookieParser from "cookie-parser";
+const cors = require("cors")
+app.use(cors({origin:"https://backendcode-2.onrender.com/",credentials:true}))
 // import path from "path";
 export const app = express();
 
