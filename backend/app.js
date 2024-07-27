@@ -1,9 +1,9 @@
 import express from "express";
 import cookieParser from "cookie-parser";
 import cors from "cors"
-app.use(cors({origin:"https://backendcode-2.onrender.com/",credentials:true}))
 // import path from "path";
 export const app = express();
+app.use(cors({origin:"https://backendcode-2.onrender.com/",credentials:true}))
 
 app.use(express.json({ limit: "100mb" }));
 app.use(express.urlencoded({ extended: true, limit: "100mb" }));
